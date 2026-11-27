@@ -1,0 +1,14 @@
+{
+  "name": "stomp-house",
+  "private": true,
+  "scripts": {
+    "start": "bun server.ts",
+    "deploy": "wrangler deploy",
+    "bot": "node e2e/bot.mjs",
+    "play": "node e2e/play.mjs",
+    "check": "node e2e/bot.mjs && node e2e/play.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
